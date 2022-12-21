@@ -5,6 +5,10 @@ html{
 
 body {
     background-color: black;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    background-image: url("img/Background.png");
     color: white;
     font-family: 'Mountains of Christmas', cursive;
 }
@@ -43,7 +47,7 @@ body {
 }
 
 #los {
-    color: white;
+    color: rgb(8, 82, 8);
     text-decoration: none;
     font-size: 15vmax;
     position: absolute;
@@ -52,9 +56,29 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.pulsate {
+    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.5;
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.2;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.2;
+    }
+}
+
+
 #bild{
     width: 30vmax;
-    border-radius: 8px;
+    height: 100%;
+    border-radius: 10%;
+    opacity: 100%;
 }
 
 .snow-wrapper {
