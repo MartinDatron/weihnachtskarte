@@ -1,5 +1,5 @@
 const name = getNameFromUrl("name") || "ihr Lieben"
-const language = getNameFromUrl("lang") || "Frohe Weihnachten, "
+const language = getNameFromUrl("lang") || "DE"
 
 const mainEle = document.getElementById("lang");
 const nameEle = document.getElementById("name");
